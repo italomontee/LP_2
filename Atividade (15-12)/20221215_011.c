@@ -13,10 +13,10 @@ int main()
 
     ImpostosTotais = 76/100;
 
-    printf("Quanto você ganha por hora?");
+    printf("Quanto vocÃª ganha por hora?");
     scanf("%f",&horasSalario);
 
-    printf("Quantas horas você trabalho ao mês?");
+    printf("Quantas horas vocÃª trabalho ao mÃªs?");
     scanf("%f",&horasTrabalho);
 
     SalarioBruto = horasSalario * horasTrabalho;
@@ -26,11 +26,11 @@ int main()
     ImpostoRenda = SalarioBruto * 11/100;
     SalarioLiq = SalarioBruto * ImpostosTotais;
 
-    printf("\n seu salario bruto é =%.1f", SalarioBruto);
-    printf("\n seu salário líquido é = %.1f", SalarioLiq);
+    printf("\n seu salario bruto Ã© =%.1f", SalarioBruto);
+    printf("\n seu salÃ¡rio lÃ­quido Ã© = %.1f", SalarioLiq);
     printf("\n seu INSS custou = %.1f", INSS);
     printf("\n seu imposto de renda custou = %.1f", ImpostoRenda);
-    printf("\n você pagou isso ao sindicato = %.1f", sindicato);
+    printf("\n vocÃª pagou isso ao sindicato = %.1f", sindicato);
 
 }
 
