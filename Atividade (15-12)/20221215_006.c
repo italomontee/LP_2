@@ -16,5 +16,5 @@ int main()
 
     sal = ganho*hora;
 
-    printf("voce ganha %0.2f por mês", sal);
+    printf("voce ganha %0.2f por mÃªs", sal);
 }
