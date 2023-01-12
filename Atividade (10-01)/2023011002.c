@@ -47,14 +47,11 @@ int ContadorDeDigitos(int num1, int num2){
 			
 		a = contar(num1, i);
 		b = contar(num2, i);
-		printf("\ni: %d", i);
-		printf("\na: %d", a);
-		printf("\nb: %d", b);
 		if (a == b && a >0 && b>0)
 		{
 			count++;
 		}
-		printf("\ncount: %d", count);
+		
 	}
 
 	if (cont1 == count )
