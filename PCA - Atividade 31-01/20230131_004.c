@@ -52,6 +52,26 @@ void f (){
 
 }
 
+void g(){
+    char crc1, crc2;
+    int count, count2;
+    printf("crc1:  ");
+    scanf(" %c", &crc1);
+    
+    printf("\ncrc2:  ");
+    scanf(" %c", &crc2);
+
+    while (count < 20) 
+    {
+        if(s1[count]==crc1 && count2 = 0){
+            s1[count] =crc2;
+            count2=1;
+        }
+    count++;
+    }
+    printf("\n%s", s1);
+}
+
 int main(){
     a();
     b();
