@@ -37,9 +37,19 @@ void e(){
     }
 
 }
+void f (){
+    int i, count;
+    char crc;
+    printf("crc: ");
+    scanf(" %c", &crc);
+    for (i=0; i<strlen(s1); i++){
+        if (crc == s1[i]){
+            count += 1;
 
-void f(){
-    
+        }
+    }
+    printf("o carcter aparece %d vezes", count); 
+
 }
 
 int main(){
@@ -48,6 +58,7 @@ int main(){
     c();
     d();
     e();
+    f();    
 }
 
 
