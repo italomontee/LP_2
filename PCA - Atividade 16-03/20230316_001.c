@@ -1,44 +1,46 @@
 #include<stdio.h>
 #include<stdlib.h>
 int i;
-int ler(int *n, int *inicio)
+int ler(int *inicio,int *n)
 {
-    
-    printf("Quantos valores tera o vetor");
+    printf("Qual o tamanho do vetor: ");
     scanf("%d", n);
-    
-    *inicio =  (malloc(*n * sizeof(int)));
 
-    for ( i = 0; i < *n; i++)
+    *inicio = (malloc(*n * sizeof(int)));
+
+    for (i=0; i<*n; i++)
     {
-        printf("Valor do elemento %d: ", i);
+        printf("Elemento [%d]: ", i);
         scanf("%d", inicio+i);
     }
 
-    
-    
+
 }
 
-void maiormenor(int *inicio,int *maior,int *menor,int *n){
+void maiormenor(int *maior, int *menor, int *inicio, int* n)
+{
     *maior = *inicio;
     *menor = *inicio;
-    for ( i = 0; i < *n; i++)
+    for(i=0; i<*n;i++)
     {
-        if (*(inicio+i)>*maior)
+        if (*(inicio+i) > *maior)
         {
             *maior = *(inicio+i);
         }
-        else if(*(inicio+i)< *menor){
+        else if (*(inicio+i) < *menor)
+        {
             *menor = *(inicio+i);
-        }
-        
+        }        
     }
-    
+
+   
 }
 
-int main(){
-    int n, inicio, maior, menor;
-    ler(&n, &inicio);
-    maiormenor(&inicio, &maior, &menor, &n);
-    printf("o maior: %d e o menor: %d", maior, menor);
+int main()
+{
+    int inicio, maior, menor, n;
+    ler(&inicio, &n);
+    maiormenor(&maior, &menor,&inicio, &n);
+    printf("O Maior: %d \nO Menor: %d", maior, menor);
+
 }
